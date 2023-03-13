@@ -13,7 +13,6 @@ import com.example.pain_and_gain_app.databinding.FragmentListBinding
 class ListFragment : Fragment(R.layout.fragment_list) {
     private lateinit var binding: FragmentListBinding
     private val fragmentViewModel: FragmentViewModel by activityViewModels()
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -34,10 +33,8 @@ class ListFragment : Fragment(R.layout.fragment_list) {
                 textView.text = chad.toString()
                 listView.addHeaderView(textView)
             }
-
             container.addView(listView)
         }
-
         return binding.root
     }
 }
