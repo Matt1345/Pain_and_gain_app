@@ -24,16 +24,16 @@ class ListFragment : Fragment(R.layout.fragment_list) {
             val adapter = ArrayAdapter(this.requireContext(), android.R.layout.simple_spinner_item, chadList)
             val listView = binding.myListview
             listView.adapter = adapter
-            val container = binding.conLayout
+            val spremnik = binding.conLayout
 
-            container.removeAllViews()
+            spremnik.removeAllViews()
 
             chadList.forEach { chad ->
                 val textView = TextView(requireContext())
                 textView.text = chad.toString()
                 listView.addHeaderView(textView)
             }
-            container.addView(listView)
+            spremnik.addView(listView)
         }
         return binding.root
     }

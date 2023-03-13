@@ -18,9 +18,9 @@ data class TopG(
     override fun toString(): String {
         val gfNumber = nmrOfGirfriends[0]
         val index = nmrOfGirfriends.indexOf('(')
-        val gf_status = nmrOfGirfriends.substring(index + 1, nmrOfGirfriends.length - 1)
+        val gfStatus = nmrOfGirfriends.substring(index + 1, nmrOfGirfriends.length - 1)
         return "$firstname $lastName of nationality $nationality and age $age, located in $placeOfResidence.\nHis net worth gives him a status of " +
-            "$netWorth and he has $gfNumber girlfriends, which makes him a $gf_status"
+            "$netWorth and he has $gfNumber girlfriends, which makes him a $gfStatus"
     }
 }
 
