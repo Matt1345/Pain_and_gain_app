@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/add_layout"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_a_new_account"
+            android:textSize="@dimen/title"
+            android:textStyle="italic|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cybertoothbolditalic"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_firstname"
+            android:autofillHints="@string/template_firstname"
+            android:inputType="text"
+            android:textSize="@dimen/normal_text" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_lastname"
+            android:autofillHints="@string/template_lastname"
+            android:inputType="text"
+            android:textSize="@dimen/normal_text" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_age"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_age"
+            app:customId="age"
+
+            android:autofillHints="@string/template_age"
+            android:inputType="number"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nationality"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_nationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_nationality"
+            app:customId="nationality"
+            android:autofillHints="@string/template_nationality"
+            android:inputType="text"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birth_place"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_placeofbirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_birth_place"
+            android:autofillHints="@string/template_birth_place"
+            android:inputType="text"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/place_of_residence"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_placeofresidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_place_of_residence"
+            android:autofillHints="@string/template_place_of_residence"
+            android:inputType="text"
+            android:textSize="@dimen/normal_text"  />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_height"
+            app:customId="height"
+            android:autofillHints="@string/template_height"
+            android:inputType="number"
+            android:textSize="@dimen/normal_text" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_weight"
+            app:customId="weight"
+            android:autofillHints="@string/template_weight"
+            android:inputType="number"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/net_worth"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bench_weight"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_benchWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_bench_weight"
+            app:customId="weight"
+            android:autofillHints="@string/template_bench_weight"
+            android:inputType="number"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/squat_weight"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_squatWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_squat_weight"
+            app:customId="weight"
+            android:autofillHints="@string/template_squat_weight"
+            android:inputType="number"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gf_number"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_gf_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_0"
+                android:fontFamily="@font/squaremaze_italic"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_1"
+                android:fontFamily="@font/squaremaze_italic"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_2"
+                android:fontFamily="@font/squaremaze_italic"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_3"
+                android:fontFamily="@font/squaremaze_italic"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_4"
+                android:fontFamily="@font/squaremaze_italic"/>
+
+        </RadioGroup>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color_of_your_bugatti"
+            android:textSize="@dimen/normal_text"
+            android:fontFamily="@font/beyondmars"
+            />
+
+        <com.example.pain_and_gain_app.CustomEditText
+            android:id="@+id/textView_bugatti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/template_bugatti_color"
+            android:autofillHints="@string/template_bugatti_color"
+            android:inputType="text"
+            android:textSize="@dimen/normal_text" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textSize="@dimen/normal_text"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/squaremaze_italic"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

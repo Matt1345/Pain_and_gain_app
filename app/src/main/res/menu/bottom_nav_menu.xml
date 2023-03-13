@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chad add"
+        android:icon="@drawable/yeah_buddy_24"
+        android:id="@+id/add"/>
+    <item android:title="Top G's"
+        android:icon="@drawable/chads_24"
+        android:id="@+id/chad_list"/>
+</menu>
