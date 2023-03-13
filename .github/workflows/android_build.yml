@@ -15,11 +15,11 @@ jobs:
       - name: Set Up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: 11
+          java-version: 19
           distribution: 'adopt'
 
       - name: Run Tests
-        run: ./gradlew ktlintCheck
+        run: bash ./gradlew ktlintCheck
 
       - name: Build Project
-        run: ./gradlew assemble
+        run: bash ./gradlew assemble
