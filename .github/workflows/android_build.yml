@@ -19,7 +19,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Run Tests
-        run: bash ./gradlew ktlintCheck
+        run: gradlew ktlintCheck
 
       - name: Build Project
-        run: bash ./gradlew assemble
+        run: gradlew assemble
