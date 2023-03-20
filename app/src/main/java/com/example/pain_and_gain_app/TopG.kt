@@ -9,7 +9,7 @@ data class TopG(
     val placeOfResidence: String,
     val height: Int,
     val weight: Int,
-    val netWorth: String,
+    val netWorth: NetWorth,
     val benchWeight: Int,
     val squatWeight: Int,
     val nmrOfGirfriends: String,
