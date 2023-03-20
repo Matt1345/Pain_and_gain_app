@@ -19,8 +19,7 @@ class ChadAddFragment : Fragment() {
     private val fragmentViewModel: FragmentViewModel by activityViewModels()
     private var role: NetWorth = NetWorth.BROKIE
     private var playerStatus: String = "0 (incel)"
-    private val netWorths = mutableListOf<String>()
-    private val names = NetWorth.values()
+    private val netWorths = NetWorth.values()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,9 +27,10 @@ class ChadAddFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentChadAddBinding.inflate(layoutInflater)
+
         val spinner = binding.spinner
-        val adapter = ArrayAdapter(this.requireContext(), android.R.layout.simple_spinner_item, netWorths)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        val adapter = ArrayAdapter(this.requireContext(), android.R.layout.simple_spinner_item, netWorths.map { item -> item.value })
+        // adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -80,7 +80,7 @@ class ChadAddFragment : Fragment() {
                     binding.textViewPlaceofresidence.text.toString(),
                     Integer.parseInt(binding.textViewHeight.text.toString()),
                     Integer.parseInt(binding.textViewWeight.text.toString()),
-                    role.toString(),
+                    role,
                     Integer.parseInt(binding.textViewBenchWeight.text.toString()),
                     Integer.parseInt(binding.textViewSquatWeight.text.toString()),
                     playerStatus,
@@ -98,6 +98,7 @@ class ChadAddFragment : Fragment() {
                 val transaction = parentFragmentManager.beginTransaction()
                 transaction.replace(R.id.frameLayout, listFragment)
                 transaction.addToBackStack(null)
+
                 transaction.commit()
             }
         }
