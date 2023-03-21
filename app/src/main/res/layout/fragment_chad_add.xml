@@ -37,7 +37,7 @@
 
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_firstname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_lastname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_age"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_nationality"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_placeofbirth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_placeofresidence"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_height"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -203,7 +203,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_benchWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -222,7 +222,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_squatWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -293,7 +293,7 @@
             android:fontFamily="@font/beyondmars"
             />
 
-        <com.example.pain_and_gain_app.CustomEditText
+        <com.example.pain_and_gain_app.views.CustomEditText
             android:id="@+id/textView_bugatti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -304,6 +304,7 @@
 
         <Button
             android:id="@+id/add_button"
+            android:backgroundTint="@color/max_green"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add"

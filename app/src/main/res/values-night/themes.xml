@@ -10,7 +10,24 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/max_green</item>
         <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+    <style name="Appbar_theme" parent = "@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+        <item name="android:background">@color/granite_gray</item>
+        <item name="android:titleTextColor">@color/white</item>
+        <item name="android:subtitleTextColor">@color/white</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="CustomBottomNavigation_theme" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/granite_gray</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="itemIconTint">@color/max_green</item>
+        <item name="android:elevation">8dp</item>
     </style>
 </resources>

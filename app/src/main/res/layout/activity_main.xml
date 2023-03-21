@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     android:id="@+id/con_layout"
     tools:context=".MainActivity">
+    
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppbar"
+            android:theme="@style/Appbar_theme"
+            app:title="SCAM COURSE"
+            app:navigationIcon="@android:drawable/arrow_down_float"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.ActionBar.Primary"
+            app:menu="@menu/top_abb_bar"
+            android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -26,6 +41,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu"/>
+        app:menu="@menu/bottom_nav_menu"
+        style="@style/CustomBottomNavigation_theme"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

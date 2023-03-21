@@ -1,8 +1,9 @@
-package com.example.pain_and_gain_app
+package com.example.pain_and_gain_app.views
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatEditText
+import com.example.pain_and_gain_app.R
 
 class CustomEditText(context: Context, attrs: AttributeSet?) : AppCompatEditText(context, attrs) {
     var customId: String? = null

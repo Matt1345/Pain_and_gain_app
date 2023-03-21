@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="granite_gray">#666666</color>
+    <color name="chinese_silver">#666666</color>
+    <color name="max_green">#669933</color>
+
+    <color name="dark_green">#365518</color>
+
+
 </resources>

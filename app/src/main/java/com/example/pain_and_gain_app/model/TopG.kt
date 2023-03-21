@@ -1,4 +1,4 @@
-package com.example.pain_and_gain_app
+package com.example.pain_and_gain_app.model
 
 data class TopG(
     val firstname: String,
@@ -13,14 +13,19 @@ data class TopG(
     val benchWeight: Int,
     val squatWeight: Int,
     val nmrOfGirfriends: String,
-    val colorOfYourBugatti: String
+    val colorOfYourBugatti: String,
+    val pictureId: Int
 ) {
     override fun toString(): String {
         val gfNumber = nmrOfGirfriends[0]
         val index = nmrOfGirfriends.indexOf('(')
         val gfStatus = nmrOfGirfriends.substring(index + 1, nmrOfGirfriends.length - 1)
-        return "$firstname $lastName of nationality $nationality and age $age, located in $placeOfResidence.\nHis net worth gives him a status of " +
-            "$netWorth and he has $gfNumber girlfriends, which makes him a $gfStatus"
+        return "This buster's name is $firstname $lastName.\nHe is of nationality $nationality and  he is $age of age.\n" +
+            "He was born in $placeOfBirth, " +
+            "and now he lives in $placeOfResidence.\nHe is $height centimeters tall " +
+            "and weighs $weight kilograms.\nHis net worth which is ${netWorth.value}, gives him a status of $netWorth, and he has " +
+            "$gfNumber girlfriends which means he is a real $gfStatus.\n" +
+            "The color of his bugatti is $colorOfYourBugatti!"
     }
 }
 
