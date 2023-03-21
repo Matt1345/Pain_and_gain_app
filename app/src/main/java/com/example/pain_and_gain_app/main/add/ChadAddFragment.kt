@@ -1,4 +1,4 @@
-package com.example.pain_and_gain_app
+package com.example.pain_and_gain_app.main.add
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -11,13 +11,21 @@ import android.widget.RadioButton
 import androidx.core.view.children
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import com.example.pain_and_gain_app.MainActivity
+import com.example.pain_and_gain_app.R
 import com.example.pain_and_gain_app.databinding.FragmentChadAddBinding
+import com.example.pain_and_gain_app.main.list.ListFragment
+import com.example.pain_and_gain_app.main.viewmodel.FragmentViewModel
+import com.example.pain_and_gain_app.model.NetWorth
+import com.example.pain_and_gain_app.model.TopG
+import com.example.pain_and_gain_app.views.CustomEditText
+import java.util.*
 
 class ChadAddFragment : Fragment() {
 
     private lateinit var binding: FragmentChadAddBinding
     private val fragmentViewModel: FragmentViewModel by activityViewModels()
-    private var role: NetWorth = NetWorth.BROKIE
+    private var networthStatus: NetWorth = NetWorth.BROKIE
     private var playerStatus: String = "0 (incel)"
     private val netWorths = NetWorth.values()
 
@@ -41,6 +49,11 @@ class ChadAddFragment : Fragment() {
                 id: Long
             ) {
                 val selectedItem = parent.getItemAtPosition(position).toString()
+                for (status in NetWorth.values()) {
+                    if (status.value.equals(selectedItem)) {
+                        networthStatus = status
+                    }
+                }
                 println(selectedItem)
             }
 
@@ -71,6 +84,9 @@ class ChadAddFragment : Fragment() {
             }
 
             if (!(hasErrors)) {
+                println(networthStatus)
+                val random = Random()
+                val randomNumber = random.nextInt(3)
                 val chadissimus = TopG(
                     binding.textViewFirstname.text.toString(),
                     binding.textViewLastname.text.toString(),
@@ -80,11 +96,12 @@ class ChadAddFragment : Fragment() {
                     binding.textViewPlaceofresidence.text.toString(),
                     Integer.parseInt(binding.textViewHeight.text.toString()),
                     Integer.parseInt(binding.textViewWeight.text.toString()),
-                    role,
+                    networthStatus,
                     Integer.parseInt(binding.textViewBenchWeight.text.toString()),
                     Integer.parseInt(binding.textViewSquatWeight.text.toString()),
                     playerStatus,
-                    binding.textViewBugatti.text.toString()
+                    binding.textViewBugatti.text.toString(),
+                    randomNumber
                 )
 
                 fragmentViewModel.addTopG(chadissimus)

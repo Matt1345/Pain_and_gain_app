@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Pain and gain app</string>
     <string name="tab_text_1">Add user</string>
     <string name="tab_text_2">User list</string>
 
@@ -46,5 +45,8 @@
     <string name="option_3">4-5 (player)</string>
     <string name="option_4">>5 (Top G)></string>
     <string name="background">background</string>
+    <string name="search">Search</string>
+    <string name="more">More</string>
+    <string name="details_activity_title">More about this dude</string>
 
 </resources>
